@@ -1,7 +1,7 @@
 Hello World
 ===========
 
-This is a simple Docker image that just gives http responses on port 8000. It's
+This is a simple Docker image that just gives http responses on port 3000. It's
 small enough to fit on one floppy disk:
 
 ```bash
@@ -25,7 +25,7 @@ Sample Usage
 ### Starting a web server on port 80
 
 ```bash
-$ docker run -d --rm --name web-test -p 80:8000 crccheck/hello-world
+$ docker run -d --rm --name web-test -p 80:3000 crccheck/hello-world
 ```
 
 You can now interact with this as if it were a dumb web server:

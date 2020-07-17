@@ -7,9 +7,9 @@ branches:
 
 before_install:
   - docker build -t hello-world .
-  - docker run -d -p 127.0.0.1:8000:8000 hello-world
+  - docker run -d -p 127.0.0.1:3000:3000 hello-world
 
 script:
   - docker ps | grep hello-world
-  - curl --fail localhost:8000
-  - curl --fail -I localhost:8000
+  - curl --fail localhost:3000
+  - curl --fail -I localhost:3000
